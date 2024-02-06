@@ -23,18 +23,15 @@ exit /b 0
 echo Nahajas se v kleti!
 echo Pojdi LEVO, DESNO, NAPREJ ali NAZAJ
 set /p vnos="Vnos: "
-if /i "%vnos%" == "DESNO" (
-pause
-) else if /i "%vnos%" == "LEVO" (
-	echo levo
+if /i "%vnos%" == "LEVO" (
+	pause
+) else if /i "%vnos%" == "DESNO" (
+	pause
 ) else if /i "%vnos%" == "NAPREJ" (
-	echo napaka!
+	pause
 ) else if /i "%vnos%" == "NAZAJ" (
-	echo neki
-) else (
-	echo NAPAKA!
-	:klet
-)
+	pause
+) 
 
 pause
 
